@@ -1,0 +1,17 @@
+mysql> CREATE TABLE users(
+    -> id int NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    -> name VARCHAR(50),
+    -> pass VARCHAR(50),
+    -> usertype int 
+    -> );
+Query OK, 0 rows affected (0.23 sec)
+
+mysql> describe users;
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| id       | int(11)     | NO   | PRI | NULL    | auto_increment |
+| name     | varchar(50) | YES  |     | NULL    |                |
+| pass     | varchar(50) | YES  |     | NULL    |                |
+| usertype | int(11)     | YES  |     | NULL    |                |
++----------+-------------+------+-----+---------+----------------+
